@@ -13,22 +13,24 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 class Stack {
-	this.Stack = [];
+	constructor() {
+		this.stack = [];
+	}
 
-push(element) {
-	// remove line with error and write your code here
-	this.stack.push(element);
-}
+	push(element) {
+		// remove line with error and write your code here
+		this.stack.push(element);
+	}
 
-pop() {
-	// remove line with error and write your code here
-	return this.stack.pop();
-}
+	pop() {
+		// remove line with error and write your code here
+		return this.stack.pop();
+	}
 
-peek() {
-	// remove line with error and write your code here
-	return this.stack[this.stack.length - 1]
-}
+	peek() {
+		// remove line with error and write your code here
+		return this.stack[this.stack.length - 1]
+	}
 }
 
 module.exports = {
